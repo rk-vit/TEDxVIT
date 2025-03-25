@@ -1,0 +1,136 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.5s ease;
+  padding: 20px 0;
+}
+
+.header h1{
+  color: white;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Default text color for header elements */
+
+
+.nav-link:hover {
+  color: #e62b1e; /* Red on hover */
+}
+
+
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-left: 2rem;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e62b1e;
+}
+.header.scrolled .nav-link, .header.header.scrolled h1,
+.header.scrolled .contact-btn,
+.header.scrolled .menu-toggle {
+  color: #333; /* Change to dark gray after scrolling */
+}
+.contact-btn {
+  margin-left: 2rem;
+  padding: 10px 24px;
+  font-size: 0.875rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #333;
+  z-index: 20;
+  display: flex;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 10;
+  padding-top: 80px;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+
+.mobile-nav.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.mobile-nav-link {
+  padding: 1rem 0;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border-bottom: 1px solid #f0f0f0;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+  color: #e62b1e;
+}
+
+.mobile-contact-btn {
+  margin-top: 1.5rem;
+  align-self: center;
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+

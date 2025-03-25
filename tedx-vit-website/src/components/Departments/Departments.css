@@ -1,0 +1,256 @@
+.departments-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative elements */
+.decor-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: white;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  z-index: 0;
+}
+
+.decor-circle-1 {
+  position: absolute;
+  top: -2.5rem;
+  right: -2.5rem;
+  width: 10rem;
+  height: 10rem;
+  background: rgba(230, 43, 30, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.decor-circle-2 {
+  position: absolute;
+  bottom: -2.5rem;
+  left: -2.5rem;
+  width: 10rem;
+  height: 10rem;
+  background: rgba(230, 43, 30, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.decor-rect-1 {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  width: 4rem;
+  height: 16rem;
+  background: rgba(230, 43, 30, 0.05);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  z-index: 0;
+}
+
+.decor-rect-2 {
+  position: absolute;
+  bottom: 33%;
+  right: 0;
+  width: 4rem;
+  height: 16rem;
+  background: rgba(230, 43, 30, 0.05);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  z-index: 0;
+}
+
+.section-header {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.departments-content {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.departments-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: white;
+  border: 1px solid rgba(230, 43, 30, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: #333;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #e62b1e;
+  color: white;
+  border-color: #e62b1e;
+}
+
+.tab-button:hover:not(.active) {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tab-icon {
+  display: flex;
+}
+
+.department-details {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s ease;
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.department-info {
+  padding: 2rem;
+  order: 2;
+}
+
+.department-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(230, 43, 30, 0.1);
+  color: #e62b1e;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+
+.department-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.department-description {
+  font-size: 1.125rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.responsibilities-title {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.responsibilities-list {
+  margin-bottom: 2rem;
+}
+
+.responsibility-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.check-icon {
+  color: #e62b1e;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.department-join {
+  margin-top: 1.5rem;
+}
+
+.join-link {
+  display: inline-flex;
+  align-items: center;
+  color: #e62b1e;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.join-link:hover {
+  color: #d42a1c;
+}
+
+.arrow-icon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.join-link:hover .arrow-icon {
+  transform: translateX(3px);
+}
+
+.department-image {
+  height: 100%;
+  min-height: 300px;
+  order: 1;
+}
+
+.department-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 300px;
+}
+
+@media (min-width: 768px) {
+  .department-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .department-info {
+    padding: 3rem;
+    order: 1;
+  }
+
+  .department-image {
+    order: 2;
+    min-height: 500px;
+  }
+
+  .department-image img {
+    min-height: 500px;
+  }
+}
+
