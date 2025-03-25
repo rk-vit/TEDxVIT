@@ -30,7 +30,7 @@ const Header = () => {
       <div className="container header-container">
         <a href="/" className="logo">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/TED_three_letter_logo.svg" alt="TEDx VIT Logo" />
-          <h1 style={{paddingTop:'5px'}}>XVIT</h1>       
+          <h1>XVIT</h1>       
         </a>
        
         {/* Desktop Navigation */}
@@ -45,7 +45,7 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button */} 
         <button
           className="menu-toggle"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
