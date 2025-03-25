@@ -140,7 +140,7 @@ const AboutUs = () => {
           
           <div className="about-image-container">
             <div className="main-image">
-              <img src="/assets/tedx-event-main.jpg" alt="TEDx VIT Event" />
+              <img src="/AboutUs.jpg" alt="TEDx VIT Event" />
               <div className="image-overlay">
                 <div className="overlay-content">
                   <div className="overlay-badge">TEDx VIT</div>

@@ -33,7 +33,7 @@ const Board = () => {
     {
       name: "Hariharan",
       position: "President",
-      image: "/assets/team-member-1.jpg",
+      image: "/Hariharan.jpg",
       bio: "Give your bio",
       social: {
         linkedin: "#",
@@ -44,7 +44,7 @@ const Board = () => {
     {
       name: "Neeraj Prasanna",
       position: "Vice President",
-      image: "/assets/team-member-2.jpg",
+      image: "/Neeraj.jpg",
       bio: "Bio pls",
       social: {
         linkedin: "#",
@@ -66,7 +66,7 @@ const Board = () => {
     {
       name: "Shyamanth Reddy",
       position: "Overall coordinator",
-      image: "/assets/team-member-4.jpg",
+      image: "/shyamanth.jpg",
       bio: "Bio pls",
       social: {
         linkedin: "#",
@@ -77,7 +77,7 @@ const Board = () => {
     {
       name: "Revanth Kanna",
       position: "Technical Lead",
-      image: "/assets/team-member-5.jpg",
+      image: "revanth.jpg",
       bio: "An Computer Engineering student specializing software development.",
       social: {
         linkedin: "#",
@@ -143,7 +143,7 @@ const Board = () => {
     {
       name: "Dhanvanthini",
       position: "Photography",
-      image: "/assets/team-member-8.jpg",
+      image: "dhanvantini.jpg",
       bio: "Bio pls",
       social: {
         linkedin: "#",
